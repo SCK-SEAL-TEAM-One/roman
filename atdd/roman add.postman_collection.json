@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "5bafdef5-55a1-4f6a-9c5d-6e482bf429f2",
+		"name": "roman add",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "romamadd input I + I Should be II ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a0f98635-f1d8-4c36-a61e-281f5c6de5a5",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"roman result should be II\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanResult).to.eql(\"II\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "Localhost:3000/roman/add?firstNumber=I&secondNumber=I",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "I"
+						},
+						{
+							"key": "secondNumber",
+							"value": "I"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "romamadd input II + II Should be IV",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb4e2124-0b0f-44e2-b32a-c65db0a86a49",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"roman result should be IV\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanResult).to.eql(\"IV\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "Localhost:3000/roman/add?firstNumber=II&secondNumber=II",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "II"
+						},
+						{
+							"key": "secondNumber",
+							"value": "II"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "romamadd input IX + I Should be X",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c30f33b2-f09c-476b-884f-4f8fa1114524",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"roman result should be X\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanResult).to.eql(\"X\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "Localhost:3000/roman/add?firstNumber=IX&secondNumber=I",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "IX"
+						},
+						{
+							"key": "secondNumber",
+							"value": "I"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "romamadd input XXV + XXV Should be L",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b48a8b12-f8c4-49b6-9777-ea47a8a45b71",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"roman result should be L\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanResult).to.eql(\"L\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "Localhost:3000/roman/add?firstNumber=XXV&secondNumber=XXV",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "XXV"
+						},
+						{
+							"key": "secondNumber",
+							"value": "XXV"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "romamadd input L + L Should be C",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ef15d8e5-bd4e-4a0e-8978-3e1155148ec5",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"roman result should be C\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanResult).to.eql(\"C\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "Localhost:3000/roman/add?firstNumber=L&secondNumber=L",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "L"
+						},
+						{
+							"key": "secondNumber",
+							"value": "L"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
