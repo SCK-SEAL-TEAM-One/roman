@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "3aeaf126-f02d-4816-9444-2d40be6a133c",
+		"name": "romanplus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Input I and I should be II",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "98478557-5d31-40f1-b8eb-05744b391a44",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input I and I should be II\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.RomanResult).to.eql(\"II\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstNumber=I&secondNumber=I",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "I"
+						},
+						{
+							"key": "secondNumber",
+							"value": "I"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input II and II should be IV",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f7517843-4566-4feb-905a-5257693abff4",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input II and II should be IV\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.RomanResult).to.eql(\"IV\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstNumber=II&secondNumber=II",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "II"
+						},
+						{
+							"key": "secondNumber",
+							"value": "II"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input IX and I should be X",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "023455c8-50d6-4e8d-aa26-72faf741a7e7",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input IX and I should be X\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.RomanResult).to.eql(\"X\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstNumber=IX&secondNumber=I",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "IX"
+						},
+						{
+							"key": "secondNumber",
+							"value": "I"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input XXV and XXV should be L",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "126d9dce-241b-453a-9383-55816468f72d",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input XXV and XXV should be L \", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.RomanResult).to.eql(\"L\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstNumber=XXV&secondNumber=XXV",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "XXV"
+						},
+						{
+							"key": "secondNumber",
+							"value": "XXV"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input L and L should be C",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "436565a5-a8aa-4f04-8cb5-29e12b532c01",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input L and L should be C\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.RomanResult).to.eql(\"C\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstNumber=L&secondNumber=L",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstNumber",
+							"value": "L"
+						},
+						{
+							"key": "secondNumber",
+							"value": "L"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
