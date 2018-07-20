@@ -1,0 +1,263 @@
+{
+	"info": {
+		"name": "romannumber",
+		"_postman_id": "c177e062-dccf-f813-4f21-e194e5ec3b41",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "convertToRomanNumber",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "89e0a126-3836-4be4-bf7d-bfeabf4b16a8",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input Firstnumber I And Secondnumber Should Be I \", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanNumber).to.eql(\"II\");",
+							"});",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstnumber=1&secondnumber=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstnumber",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "secondnumber",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "convertToRomanNumber2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2bc6ac57-a66e-4604-900d-4f0a4afbd169",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input Firstnumber II And Secondnumber Should Be II \", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanNumber).to.eql(\"IV\");",
+							"});",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstnumber=2&secondnumber=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstnumber",
+							"value": "2",
+							"equals": true
+						},
+						{
+							"key": "secondnumber",
+							"value": "2",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "convertToRomanNumber3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6cf11db0-a254-4fa8-a3d0-d635385b68be",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input Firstnumber IX And Secondnumber I Should Be I \", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanNumber).to.eql(\"X\");",
+							"});",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstnumber=9&secondnumber=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstnumber",
+							"value": "9",
+							"equals": true
+						},
+						{
+							"key": "secondnumber",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "convertToRomanNumber4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "487ef2a7-9fd0-4999-8d08-346e443fbbf3",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input Firstnumber XXV And Secondnumber XXV Should Be I \", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanNumber).to.eql(\"L\");",
+							"});",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstnnumber=25&secondnumber=25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstnnumber",
+							"value": "25",
+							"equals": true
+						},
+						{
+							"key": "secondnumber",
+							"value": "25",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "convertToRomanNumber5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f44f93f0-66cc-48d1-96ed-9a972c290968",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Input Firstnumber L And Secondnumber L Should Be I \", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.romanNumber).to.eql(\"C\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/roman/add?firstnnumber=50&secondnumber=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roman",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstnnumber",
+							"value": "50",
+							"equals": true
+						},
+						{
+							"key": "secondnumber",
+							"value": "50",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
